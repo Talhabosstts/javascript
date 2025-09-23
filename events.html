@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        .container{
+           text-align: center;
+           margin-top: 400px;
+        }
+        button{
+            background-color: rgb(243, 37, 37);
+            color: white;
+            box-shadow: (0,0,0,0.28 rgb(204, 200, 200));
+            border-radius: 5px;
+        }
+        button:hover{
+            color: rgb(117, 4, 4);
+
+        }
+        h1{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            
+        }
+    </style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <input placeholder="Enter Your Name" type="text" id="studentName">
+        <button onclick="printName()">Submit</button>
+        <h1></h1>
+        <p id="para"></p>
+    </div>
+    <script>
+        function printName(){
+            let userName = document.getElementById("studentName").value;
+            document.querySelector("h1").innerHTML = userName ;
+        }
+        let a = 8;
+        let b = 5;
+        let result =a++   +     b   +     ++a     +   a   +   --b   +    a++
+
+
+        document.getElementById("para") .innerHTML = result;
+        
+
+
+        
+    </script>
+    
+    
+</body>
+</html>

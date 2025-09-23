@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>multi array</title>
+</head>
+
+<body>
+    <script>
+        let courses = [ 
+            ["html", "css", "js", "jquerry"],
+            ["xm", "c#", "jason", "bootsrap"],
+            ["cpism", "dism", "hdse", "accpai"]
+        ]
+        document.write(courses[0][3],"<br>", courses[2][3],"<br")
+
+        document.write(courses)
+
+        for (let value of courses){
+            document.write(value[1],"<br>",value[0],"<br>")
+        }
+
+        for (value of courses) {
+           
+            for (data of value) {
+                document.write(data, "<br")
+            }
+
+        }
+    </script>
+
+</body>
+
+</html>
