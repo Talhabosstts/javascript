@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        // local storage
+    localStorage.setItem("name", "zain")
+    localStorage.setItem("email", "zain@gmail.com")
+
+    let data = localStorage.getItem("name")
+    document.write(data)
+
+
+    // session storage
+
+    sessionStorage.setItem("name", "faizan")
+
+    alert(sessionStorage.getItem("name"))
+
+    sessionStorage.removeItem("name")
+
+    // cookies
+
+    document.cookie = "cookie1,hello"  // persistent
+
+    document.cookie = "cookie2 , hello world, max-age"+ 60 * 60 * 24
+   
+
+    </script>
+
+    
+</body>
+</html>
